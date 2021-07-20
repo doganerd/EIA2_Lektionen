@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haushaltshilfe</title>
+  <link rel="stylesheet" href="Haushaltshilfe.css" type="text/css" media="screen" />
+  <script src="Haushaltshilfe.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+  <h1>Haushaltshilfe</h1>
+
+
+
+  <fieldset id="groceries">
+    <legend>What do you need to get done?</legend>
+    <input type="checkbox" name="Checkbox1" value="check1" id="check0" />
+    <label for="check1">Groceries</label>
+    <input type="checkbox" name="Checkbox2" value="check2" id="check2" />
+    <label for="check2">Chores</label>
+    <input type="checkbox" name="Checkbox3" value="check0" id="check3" />
+    <label for="check3">Withdraw Money</label>
+    <hr />
+    When? <br>
+    <input type="date" name="Date" />
+    <hr />
+    Which groceries do you need? <br>
+    <div id="MyToDoList" class="header">
+      <input type="text" id="newtask" placeholder="...">
+      <span onclick="newElement()" class="addtask">Add</span>
+      <div class="counts"></div>
+    </div>
+
+    <ul type="1" id="tasks"></ul>
+    <hr />
+    At what time?<br>
+    <text>8am</text><input type="range" name="Slider" min="0" max="1" step="0.1" value="0" /><text>6pm</text>
+    <hr />
+    <legend>From which grocery store do you want your items?</legend>
+    <input type="radio" name="Radiogroup" value="radio1" id="radio1" />
+    <label for="radio1">Walmart</label>
+    <input type="radio" name="Radiogroup" value="radio2" id="radio2" />
+    <label for="radio2">Trader Joe's</label>
+    <input type="radio" name="Radiogroup" value="radio3" id="radio3" />
+    <label for="radio3">Whole Foods</label>
+    <input type="radio" name="Radiogroup" value="radio4" id="radio4" />
+    <label for="radio4">7-Eleven</label>
+    <hr />
+
+    <legend>Which chores need to get done?</legend>
+    <input type="checkbox" name="Checkbox4" value="check4" id="check4" />
+    <label for="check4">Cleaning</label>
+    <input type="checkbox" name="Checkbox5" value="check5" id="check5" />
+    <label for="check5">Vacuuming</label>
+    <input type="checkbox" name="Checkbox6" value="check6" id="check6" />
+    <label for="check6">Laundry</label>
+
+  </fieldset>
+
+  <h2>Grocery Price Overview</h2>
+
+  <table>
+    <tr>
+      <th>Grocery</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Bread</td>
+      <td>2.95€</td>
+    </tr>
+    <tr>
+      <td>Milk</td>
+      <td>1.75€</td>
+    </tr>
+    <tr>
+      <td>Eggs</td>
+      <td>1.35€</td>
+    </tr>
+    <tr>
+      <td>Vegetables</td>
+      <td>6.75€</td>
+    </tr>
+    <tr>
+      <td>Fruits</td>
+      <td>4.10€</td>
+    </tr>
+    <tr>
+      <td>Snacks</td>
+      <td>3.95€</td>
+    </tr>
+  </table>
+  <hr />
+
+  <div class="checkout">
+    <h3>Checkout</h3>
+    <p>Please chose your payment method</p>
+    <select name="Select" id="select">
+      <option value="option1">Paypal</option>
+      <option value="option2">Klarna</option>
+      <option value="option3">Credit Card</option>
+      <option value="option4">Debit Card</option>
+    </select>
+  </div>
+
+</body>
+
+</html>

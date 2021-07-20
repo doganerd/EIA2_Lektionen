@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haushaltshilfe</title>
+    <link rel="stylesheet" href="datastructurel05.css">
+    <script src="datal05.json"></script>
+    <script src="GenerateContentl05.js"></script>
+    <script src="server.js"></script>
+
+</head>
+<body>
+  <header>
+  </header>  
+
+<form>
+    <div id="form">
+        <h1>Haushaltshilfe</h2>
+        <fieldset id="field1">
+            <legend>Groceries</legend>
+            <input type="checkbox" name="Checkbox" id="milk" value="Milk" price="1.75" einheit="Liter">
+            <label for="milk">Milk</label> <br> <br>
+            <input type="checkbox" name="Checkbox" id="eggs" value="Eggs" price="1.19" einheit="Box">
+            <label for="eggs">Eggs</label> <br> <br>
+            <input type="checkbox" name="Checkbox" id="flour" value="Flour" price="1.99" einheit="Gramm">
+            <label for="flour">Flour</label> <br> <br>
+            <input type="checkbox" name="Checkbox" id="sugar" value="Sugar" price="1.00" einheit="Gramm">
+            <label for="sugar">Sugar</label> <br> <br>
+            <input type="checkbox" name="Checkbox" id="salt" value="Salt" price="1.70" einheit="Gramm">
+            <label for="salt">Salt</label>
+            
+            <span id="menge">
+                <input type="number" name="MilkMenge" step="1" min="0" max="10" value="0"> <br> <br>
+                <input type="number" name="EggsMenge" step="1" min="0" max="10" value="0"> <br> <br>
+                <input type="number" name="FlourMenge" step="1" min="0" max="10" value="0"> <br> <br>
+                <input type="number" name="SugarMenge" step="1" min="0" max="10" value="0"> <br> <br>
+                <input type="number" name="SaltMenge" step="1" min="0" max="10" value="0"> <br> <br>
+                
+            </span>
+
+            <span id="store">
+                <select name="Supermarkt" id="supermarkt1">
+                    <option value="" >Store</option>   
+                    <option value="Walmart">Walmart</option> 
+                    <option value="7-Eleven">7-Eleven</option>
+                    <option value="TraderJoes">Trader Joe's</option>
+                    <option value="WholeFoods">Whole Foods</option>
+                </select>
+               
+        
+            </span>
+        </fieldset>
+
+        <fieldset id="field2">
+            <legend>Banking</legend>
+            <input type="radio" name="Money" id="withdraw" value="Withdraw">
+            <label for="withdraw">Withdraw Money</label>
+            <input type="radio" name="Money" id="deposit" value="Deposit">
+            <label for="deposit">Deposit Money</label> <br> <br>
+            <input type="number" name="Betrag" step="5" min="0" max="1000" value="0">
+        </fieldset>
+
+        <fieldset id="field3">
+            <legend>Chores</legend>
+        
+            <select name="chores" id="chores">
+                <option value="" disabled selected hidden>...</option>
+                <option value="Vacuuming" price="10.00">Vacuuming</option>
+                <option value="Laundry" price="5.00">Laundry</option>
+                <option value="Cleaning" price="15.00">Cleaning</option>
+                <option value="Dishes" price="5.00">Dishes</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Method</legend>
+            <input type="radio" name="Payment" id="bar" value="Bar">
+            <label for="bar">Bar</label>
+            <input type="radio" name="Payment" id="paypal" value="Paypal">
+            <label for="paypal">PayPal</label>
+            <input type="radio" name="Payment" id="klarna" value="Klarna">
+            <label for="klarna">Klarna</label>
+            <input type="radio" name="Payment" id="debit" value="Debit">
+            <label for="debit">Debit Card</label>
+            <input type="radio" name="Payment" id="credit" value="Credit">
+            <label for="credit">Credit Card</label>
+        </fieldset>
+    </div>
+
+</form>
+
+<div id="bestellung">
+    <h2>Your order</h2>
+    <div id="order"> 
+       ... 
+    </div>
+    <button id="button">Confirm</button>
+</div>
+</body>
+</html>

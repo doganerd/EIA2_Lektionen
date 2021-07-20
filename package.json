@@ -1,0 +1,18 @@
+{
+  "name": "haushaltshilfe",
+  "version": "1.0.0",
+  "description": "haushaltshilfe",
+  "main": "index.js",
+  "scripts": {
+    "start ": "node L06/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git + https://github.com/doganerd/eia2/LO6/"
+  },
+  "keywords": [
+    "haushaltshilfe"
+  ],
+  "author": "Dilara",
+  "license": "ISC"
+}

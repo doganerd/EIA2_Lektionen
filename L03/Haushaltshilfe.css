@@ -1,0 +1,115 @@
+body {
+    background-color: #bcc8d1;
+
+}
+
+h1, h2 {
+    margin-left: 200px;
+
+}
+
+fieldset#groceries {
+    border-collapse: collapse;
+    width: 30%;
+    color: rgb(79, 115, 139);
+    margin-left: 200px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 20%;
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+
+}
+  
+td, th {
+    border: 1px solid #797979;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: rgb(79, 115, 139);
+}
+body {
+    background-color: #bcc8d1;
+
+}
+
+fieldset#groceries {
+    border-collapse: collapse;
+    width: 30%;
+    color: rgb(79, 115, 139);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 20%;
+    color: rgb(255, 255, 255);
+}
+  
+td, th {
+    border: 1px solid #797979;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: rgb(79, 115, 139);
+}
+
+.addtask {
+    padding: 3px;
+    width: 5%;
+    background: silver;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+    
+  .addtask:hover {
+    background-color: #ddd;
+    padding: 3px;
+    width: 5%;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+
+  ul li:nth-child(odd) {
+    padding: 3px;
+    width: 5%;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+    
+  
+  ul li:hover {
+    background: #ddd;
+    padding: 3px;
+    width: 5%;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+
+  .checkout {
+      position: absolute;
+      top: 90px;
+      left: 1050px;
+      background-color: rgb(79, 115, 139);
+      padding: 40px 40px 40px 40px;
+  }
